@@ -73,8 +73,8 @@
 #include "sharp_inchelper1.inc.c"
 #undef nvec
 
-void inner_loop (sharp_job *job, const int *ispair,const double *cth,
-  const double *sth, int llim, int ulim, sharp_Ylmgen_C *gen, int mi,
+void inner_loop (hpsharp_job *job, const int *ispair,const double *cth,
+  const double *sth, int llim, int ulim, hpsharp_Ylmgen_C *gen, int mi,
   const int *idx)
   {
   int njobs=job->ntrans, nv=job->flags&SHARP_NVMAX;
