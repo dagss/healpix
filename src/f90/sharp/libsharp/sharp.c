@@ -564,7 +564,7 @@ static void hpsharp_execute_job (hpsharp_job *job)
 /* alm->alm_tmp where necessary */
       alm2almtmp (&ljob, lmax, mi);
 
-      inner_loop (&ljob, ispair, cth, sth, llim, ulim, &generator, mi, idx);
+      hpsharp_inner_loop (&ljob, ispair, cth, sth, llim, ulim, &generator, mi, idx);
 
 /* alm_tmp->alm where necessary */
       almtmp2alm (&ljob, lmax, mi);

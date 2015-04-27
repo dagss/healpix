@@ -39,7 +39,7 @@
 extern "C" {
 #endif
 
-void inner_loop (hpsharp_job *job, const int *ispair,const double *cth,
+void hpsharp_inner_loop (hpsharp_job *job, const int *ispair,const double *cth,
   const double *sth, int llim, int ulim, hpsharp_Ylmgen_C *gen, int mi,
   const int *idx);
 

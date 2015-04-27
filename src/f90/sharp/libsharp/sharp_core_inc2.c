@@ -631,7 +631,7 @@ static void Z(calc_alm2map_deriv1) (const Tb cth, const hpsharp_Ylmgen_C *gen,
 
 #define VZERO(var) do { memset(&(var),0,sizeof(var)); } while(0)
 
-static void Z(inner_loop) (hpsharp_job *job, const int *ispair,
+static void Z(hpsharp_inner_loop) (hpsharp_job *job, const int *ispair,
   const double *cth_, const double *sth_, int llim, int ulim,
   hpsharp_Ylmgen_C *gen, int mi, const int *idx)
   {
